@@ -1,0 +1,76 @@
+/* #bg-video{
+    position : fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 20%;
+
+} */
+audio {
+    display :none;
+}
+body{
+    display :block;
+    padding: 0rem 2rem;
+    margin: auto;
+    text-align: center;
+}
+@keyframes year {
+    from {background-image: linear-gradient(blue,indigo,green,yellow,orange,red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color:transparent;}
+    to {background-image: linear-gradient(red,orange, yellow, green, indigo, blue);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color:transparent;}
+}
+
+@keyframes new-year {
+    from { width: 0}
+    to {width: 100%}
+}
+@keyframes blink-caret {
+    from, to { border-color : transparent }
+    50% { border-color: orange;}
+}
+
+
+#input-button{
+    background-color: green;
+    color: white;
+}
+#name{
+    font-size : 3rem;
+}
+
+.wisher{
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+}
+
+.wish{
+    font-size: 4rem;
+    font-family: 'Patua One', cursive;
+    font-family: 'Signika', sans-serif;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    new-year 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+.year{
+    font-size: 5rem;
+    animation-name : year;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
