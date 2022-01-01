@@ -7,9 +7,9 @@
     opacity: 20%;
 
 } */
-audio {
+/* audio {
     display :none;
-}
+} */
 body{
     display :block;
     padding: 0rem 2rem;
@@ -37,7 +37,9 @@ body{
     from, to { border-color : transparent }
     50% { border-color: orange;}
 }
-
+.input-box{
+    font-size: 2rem;
+}
 
 #input-button{
     background-color: green;
