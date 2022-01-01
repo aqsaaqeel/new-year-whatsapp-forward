@@ -74,6 +74,7 @@ body{
     animation-iteration-count: infinite;
 }
 .year{
+    color: black;
     font-size: 5rem;
     animation-name : year;
     animation-duration: 1s;
